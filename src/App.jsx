@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-import { ContactForm } from 'components/ ContactForm/ ContactForm.jsx';
+import  ContactForm  from 'components/ ContactForm/ ContactForm.jsx';
 import ContactList from 'components/ContactList/ ContactList.jsx';
 import Filter from 'components/Filter/Filter';
 

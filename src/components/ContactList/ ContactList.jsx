@@ -5,7 +5,7 @@ import { Empty , List} from './ ContactList.styled';
 
 
 
-export const ContactList = () => {
+const ContactList = () => {
   const contacts = useSelector(state => state.contacts);
   const filter = useSelector(state => state.filter);
 

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../contactsSlice';
-import { Form, Label, Input, Button, ErrorText } from '../../contactsSlice';
+import { Form, Label, Input, Button, ErrorText } from './ ContactForm.styled';
 
 
- export const ContactForm = () => {
+ const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(state => state.contacts);
   const [name, setName] = useState('');
@@ -32,7 +32,6 @@ import { Form, Label, Input, Button, ErrorText } from '../../contactsSlice';
     setName('');
     setNumber('');
   };
-
   return (
     <Form onSubmit={onSubmit} noValidate>
       <Label>
@@ -63,5 +62,8 @@ import { Form, Label, Input, Button, ErrorText } from '../../contactsSlice';
 };
 
 ContactForm.propTypes = {};
+
+export  default ContactForm;
+
 
 
